@@ -21,7 +21,7 @@ class Logger {
 
   private formatMsg(
     msg: string[],
-    _logLevel: LOG_LEVEL_TYPES = getDefaultLogLevel(),
+    _logLevel: LOG_LEVEL_TYPES = this._logLevel,
     msgColor: string = LOG_LEVEL_COLOR[LOG_LEVEL.info]
   ): string {
     //prettier-ignore
@@ -43,7 +43,19 @@ class Logger {
   }
   debug(...msg: string[]) {
     if (this._logLevel?.toLowerCase() !== LOG_LEVEL.debug) return;
-    console.log(this.formatMsg(msg));
+    console.log(this.formatMsg(msg), "debug");
+  }
+  cyan(...msg: string[]) {
+    console.log(this.formatMsg(msg), "info", CONSOLE_COLORS.cyan);
+  }
+  red(...msg: string[]) {
+    console.log(this.formatMsg(msg), "info", CONSOLE_COLORS.red);
+  }
+  green(...msg: string[]) {
+    console.log(this.formatMsg(msg), "info", CONSOLE_COLORS.green);
+  }
+  yellow(...msg: string[]) {
+    console.log(this.formatMsg(msg), "info", CONSOLE_COLORS.yellow);
   }
 }
 

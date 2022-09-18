@@ -9,6 +9,10 @@ declare class Logger {
     warn(...msg: string[]): void;
     error(...msg: string[]): void;
     debug(...msg: string[]): void;
+    cyan(...msg: string[]): void;
+    red(...msg: string[]): void;
+    green(...msg: string[]): void;
+    yellow(...msg: string[]): void;
 }
 /**
  * Logger to use when method names are required in log along with msg.

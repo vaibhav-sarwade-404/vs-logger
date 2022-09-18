@@ -1,6 +1,6 @@
 {
   "name": "@vs-org/logger",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple console logger with severity.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

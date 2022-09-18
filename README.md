@@ -41,3 +41,13 @@ const log = logger.getLogger("methodName");
 logger.debug(`some msg`); //[2022-8-20 T14:42:1:740 UTC+02:00] DEBUG: methodName: some msg
 
 ```
+
+## License
+
+MIT (see [LICENSE](https://github.com/vaibhav-sarwade-404/vs-logger/blob/main/LICENSE))
+
+<br/>
+
+## Note
+
+This is experimental package and not actively maintained. Please don't raise issues or feature requests. Only use for development and POC's.
